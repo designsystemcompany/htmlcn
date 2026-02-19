@@ -1,0 +1,44 @@
+{
+	"name": "htmlcn",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "storybook dev -p 6006",
+		"storybook:build": "storybook build",
+		"build": "tsc -b && vite build",
+		"check": "biome check",
+    "check:write": "biome check --write"
+	},
+	"dependencies": {
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.2",
+		"@chromatic-com/storybook": "^5.0.1",
+		"@storybook/addon-a11y": "^10.2.10",
+		"@storybook/addon-docs": "^10.2.10",
+		"@storybook/addon-vitest": "^10.2.10",
+		"@storybook/react-vite": "^10.2.10",
+		"@types/node": "^24.10.1",
+		"@types/react": "^19.2.7",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^5.1.1",
+		"@vitest/browser-playwright": "^4.0.18",
+		"@vitest/coverage-v8": "^4.0.18",
+		"globals": "^16.5.0",
+		"playwright": "^1.58.2",
+		"storybook": "^10.2.10",
+		"typescript": "~5.9.3",
+		"vite": "^8.0.0-beta.13",
+		"vite-plugin-dts": "^4.5.4",
+		"vitest": "^4.0.18"
+	},
+	"overrides": {
+		"vite": "^8.0.0-beta.13",
+		"@microsoft/api-extractor": "7.56.0",
+		"ajv": "^8.18.0",
+		"@rushstack/node-core-library": "^5.20.0"
+	}
+}
