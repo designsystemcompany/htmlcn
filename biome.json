@@ -6,7 +6,10 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"includes": ["**", "!!**/dist"]
+		"includes": [
+			"**",
+			"!!**/dist"
+		]
 	},
 	"formatter": {
 		"enabled": true,
@@ -15,7 +18,16 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"nursery": {
+				"useSortedClasses": {
+					"level": "error",
+					"fix": "safe"
+				}
+			},
+			"a11y": {
+				"useButtonType": "error"
+			}
 		}
 	},
 	"javascript": {
@@ -29,6 +41,11 @@
 			"source": {
 				"organizeImports": "on"
 			}
+		}
+	},
+	"css": {
+		"linter": {
+			"enabled": true
 		}
 	}
 }
